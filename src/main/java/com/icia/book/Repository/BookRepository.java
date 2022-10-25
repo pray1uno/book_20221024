@@ -14,4 +14,7 @@ public class BookRepository {
     return sql.insert("Book.bookSave", bookDTO);
     }
 
+    public BookDTO findBook() {
+        return sql.selectOne("Book.findBook");
+    }
 }
