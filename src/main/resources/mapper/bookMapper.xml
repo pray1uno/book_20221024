@@ -13,6 +13,10 @@
     <select id="findBook" resultType="bookDTO">
         select * from book_table where bookId = 1
     </select>
+
+    <select id="findAll" resultType="bookDTO">
+        select * from book_table
+    </select>
 </mapper>
 
 
