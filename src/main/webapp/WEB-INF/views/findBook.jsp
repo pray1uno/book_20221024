@@ -19,5 +19,6 @@
   <h5>가격 : ${book.bookPrice}</h5>
   <h5>출판사 : ${book.bookPublisher}</h5>
   <a href="/">Index로 돌아가기</a>
+
 </body>
 </html>

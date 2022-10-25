@@ -17,6 +17,10 @@
     <select id="findAll" resultType="bookDTO">
         select * from book_table
     </select>
+
+    <select id="findBooks" parameterType="Long" resultType="bookDTO">
+        select * from book_table where bookId = #{books}
+    </select>
 </mapper>
 
 

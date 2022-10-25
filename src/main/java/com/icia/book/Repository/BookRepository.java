@@ -25,4 +25,8 @@ public class BookRepository {
         // 결과가 복수일 때 selectList, 전달값이 없으므로 매개변수 없음
         return sql.selectList("Book.findAll");
     }
+
+    public BookDTO findBooks(Long books) {
+        return sql.selectOne("Book.findBooks", books);
+    }
 }
